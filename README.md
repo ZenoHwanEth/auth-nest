@@ -4,12 +4,15 @@
 
 Step for this project 
 
-1. npm install prisma --save dev 
-2. npx prisma init
-3. change .env DATABASE_URL to `file:./dev.db`
-4. change provider to sqlite
-5. run `npm i --save @nestjs/config` to enable access to env file
-6. run `npx prisma migrate dev --name init` to make table for user
-7. make prisma service, run `npm install @prisma/client`
-8. run `nest g mo user`, `nest g s user` and `nest g co user` to create complete module
-9. making dto we need install `npm i @nestjs/mapped-types`, `npm i class-validator` and `npm i class-transformer` 
+1. `npm i -g @nestjs/cli`
+2. `nest new auth-nest`
+3. npm install prisma --save dev 
+4. npx prisma init
+5. change .env DATABASE_URL to `file:./dev.db`
+6. change provider to sqlite
+7. run `npm i --save @nestjs/config` to enable access to env file
+8. run `npx prisma migrate dev --name init` to make table for user
+9. make prisma service, run `npm install @prisma/client`
+10. run `nest g mo user`, `nest g s user` and `nest g co user` to create complete module
+11. making dto we need install `npm i @nestjs/mapped-types`, `npm i class-validator` and `npm i class-transformer` 
+12. hashing password `npm i bcrypt`
